@@ -8,6 +8,8 @@ This project implements an offline evaluation pipeline for movie recommendation 
 
 The pipeline uses a per-user train/test split, train-only feature construction, binary bandit rewards, and diversity-aware scoring.
 
+The full write-up — methodology, theory, results and discussion — is in [`final_report.md`](final_report.md).
+
 ## Project Structure
 
 ```text
@@ -18,8 +20,11 @@ src/
   simulation.py
   metrics.py
   plotting.py
+tests/
+  test_basic.py
 main.py
 requirements.txt
+final_report.md
 README.md
 data/
 outputs/
@@ -135,6 +140,12 @@ Place the MovieLens files in:
 ```text
 data/ratings.csv
 data/movies.csv
+```
+
+Run the test suite (sanity checks for Jaccard, FeatureBuilder, LinUCB updates, and simulation invariants — 27 assertions, ~1 second):
+
+```bash
+python tests/test_basic.py
 ```
 
 Quick debug run:

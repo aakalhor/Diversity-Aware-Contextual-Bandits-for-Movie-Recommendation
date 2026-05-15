@@ -1,0 +1,6 @@
+Best model by hit_rate: DiversityAwareLinUCB(lambda=0) (0.6362)
+Best model by avg_rating_reward: DiversityAwareLinUCB(lambda=0) (0.7704)
+Best model by intra_list_diversity: DiversityAwareLinUCB(lambda=0.5) (0.8314)
+Best model by catalog_coverage: DiversityAwareLinUCB(lambda=0.5) (0.3056)
+
+DiversityAwareLinUCB(lambda=0) achieved the highest hit rate, while DiversityAwareLinUCB(lambda=0.5) delivered the strongest intra-list diversity and DiversityAwareLinUCB(lambda=0.5) covered the broadest share of the candidate catalog. This reflects the expected trade-off: stronger diversity pressure can improve novelty and coverage, but it may reduce short-term reward.
